@@ -1,0 +1,190 @@
+<DOCTYPE! html>
+<HTML>
+<Head>
+    
+    <title>HOME</title>
+    <meta charset="utf-8">
+    <style>
+       body *{
+    
+    font-family: Arial;
+    font-size: 18px;
+    color:navy;
+    box-sizing: border-box;
+    background-color: violet;
+}
+/* set borders for the master page divs */
+div.master:not(#divmaincontainer):not(#divcontainer){
+    border: 1px solid black;
+    margin-bottom: 2px;
+}
+*set width for main container*/
+#divmaincontainer{
+    width:100%;
+    margin:auto;
+}
+
+
+/* style site header and motto */
+#divbanner>#sitetitle{
+    color: yellow;
+    font-size: 40px;
+    letter-spacing: 5px;
+    font-family: Arial;
+    display:block;
+    padding: 10px;
+}
+#divbanner>#sitemotto{
+   background-color: black; 
+    font-size:18px;
+    font-family: Arial;
+    font-style: italic;
+    display:block;
+    padding: 10px;
+}
+
+/* style menu bar */
+#divmenu{
+    height:30px;
+}
+#divmenu>#navmenu>#ulmenu{
+    margin: 5px;
+}
+#divmenu>#navmenu>#ulmenu>li{
+    list-style-type: none;
+    display: inline;
+}
+
+/* style div main content */
+#divmaincontent{
+    display:flex;
+    flex-direction: row;
+    gap:0.5%;
+}
+
+/* style div sidebar */
+#divsidebar{
+    width: 29.5%;
+}
+
+/* style div content */
+#divcontent{
+    width: 70%;
+}
+
+/* style footer */
+#divfooter{
+    height:30px;
+}
+#divfooter>p{
+    margin: 5px;
+    text-align: center;
+}
+
+/* style master class */
+.master{
+    border-radius: 5px;
+}
+    </style>
+</Head>
+<body>
+  <header>
+        <div class="header a">
+        <div class="logo"><td><img src="banner.jpg" width="25%"></td></div>
+        <h1 class="blue">HEY!SEE THE MOVIE TIMES BELOW AND PLEASE DO NOT HESITATE TO BUY A MOVIE TICKET</h1>
+        <h1 class="blue"> We are located at fairgrounds officepark plot267</h1>
+        <div class="right">
+          <div id="divmenu" class="master">
+            <nav id="navmenu">
+              <ul id="ulmenu">
+            
+            <a href="index.html">Index</a>
+            <a href="buy ticket.html">Buy ticket</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="contacts.html">Contact Us</a>
+              </ul>
+              </div>
+                </div>
+                </div>
+            
+                      </div>
+                      </div>
+                              </div>
+                              </div>
+                              
+          </div>
+    </header>
+    
+   
+      <main> <video class="video" width="100%" height="100%"  autoplay muted loop>
+        <source src="sofia.mp4" type="video/mp4">
+</video>
+      </main>
+      <h1><p style="color: purple;">NOW SHOWING</p></h1>
+      <table style="width:100%">
+        <tr>
+            <th><h3><b>THE UNBREAKABLE ONES</h3></b></th>
+            <th>IN THE GARDEN</th>
+            </tr>
+            <tr>
+            
+                <td>
+               
+                <img src="unbreakable ones.jpg" width="500"height="400"><br>
+                <div class="dropup ">
+                  <button class="dropbtn main">Movie Times</button>
+                  <div class="dropup-content">
+                  <p style="color: black">01 August 2022<br>5:30 pm<br>2 hours 30 minutes</p>
+                  
+                  
+                  </div>
+                </td>
+                <td>
+                  <img src="in the garden.jpg" width="500"height="400"><br>
+                <div class="dropup ">
+                  <button class="dropbtn main">Movie Times</button>
+                  <div class="dropup-content">
+                  <p style="color: black">23 August 2022<br>8:00 pm<br>1 hour 50 minutes</p>
+                  
+                  
+                  </div>
+                </td>
+            
+                
+            </tr>
+            
+            <tr>
+            <th>GUNLADY</th>
+            <th>MICKEY MOUSE</th>
+            </tr>
+            
+            <tr>
+            
+                <td>
+                  <img src="gunlady.jpg" width="500"height="400"><br>
+                <div class="dropup ">
+                  <button class="dropbtn main">Movie Times</button>
+                  <div class="dropup-content">
+                  <p style="color: black">18 july 2022<br>12:00am<br>2 hours 20 minutes</p>
+                  
+                  
+                  </div>
+                </td>
+                <td>
+                  <img src="mouse.jpg" width="500"height="400"><br>
+                  <div class="dropup ">
+                    <button class="dropbtn main">Movie Times</button>
+                    <div class="dropup-content">
+                    <p style="color: black">MON: 11.30<br>TUE:16.30<br>WED:12.30<br>THU:19.00</p>
+                    
+                    
+                    </div>
+                </td>
+            
+                
+            </tr>
+            
+            
+        </Table>
+    </footer>
+</body>

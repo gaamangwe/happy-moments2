@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<head>
+    <title>HAPPY MOMENTS FEEDBACK</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+                    
+    <style>
+   body {
+      min-height: 100%;
+      }
+      body, div, form, input, p { 
+      padding: 0;
+      margin: 0;
+      outline: none;
+      font-family: sans-serif;
+      font-size: 16px;
+      color: navy;
+      line-height: 28px;
+      }
+      h1 {
+      font-weight: 400;
+      }
+      h4 {
+      margin: 25px 0 5px;
+      }
+      .testbox {
+      display: flex;
+      justify-content:left;
+      align-items: left;
+      height: inherit;
+      padding: 3px;
+      }
+      form {
+      width: 100%;
+      padding: 20px;
+    background-color: aqua;
+      
+      }
+      
+
+
+    </style>
+    
+</head>
+
+<body>
+  <div id="divcontent">
+    <form name="feedback" id="feedback" action="feedback.html" method="post" target="_SELF" onsubmit="ValidateData()">
+        <img src="banner.jpg" width="25%" alt="Gallery Image" title="Gallery Image">
+        <a  href="happymoments home page.html">HOME</a>
+        <a href="index.html">Index</a>
+    <div class="testbox">
+      <fieldset id="fieldsetcontrols">
+        <legend>WE WILL LOVE TO HEAR FROM YOU!</legend>
+        <form action="/">
+          <h1>FEEDBACK</h1>
+          <p>We use information you provide here to improve  our services we offer here on the website and at the physical location.</p>
+          <div>
+            <h4>I have feedback about:</h4>
+            <div class="question-answer">
+              <label><input type="radio" value="none" name="using" />Comedy</label>
+              <label><input type="radio" value="none" name="using" />Action</label>
+              <label><input type="radio" value="none" name="using" />Romance</label>
+              <label><input type="radio" value="none" name="using" />Animation</label>
+            </div>
+            <label for="customerid">Firstname</label>
+            <input type="text" name="firstname" id="firstname" required placeholder="Firstname" oninvalid="setCustomValidity('Please enter the customer Firstname before proceeding !!')" oninput="setCustomValidity('')">
+            <br/>
+
+            <label for="surname">Surname</label>
+            <input type="text" name="surname" id="surname" required placeholder="Surname" oninvalid="setCustomValidity('Please enter the surname before proceeding !!')" oninput="setCustomValidity('')">
+            <br/>
+            <label for="email">Email Address</label>
+                    <input type="text" name="email" id="email" required placeholder="Email" oninvalid="setCustomValidity('Please enter the Customer Email before proceeding !!')" oninput="setCustomValidity('')">
+                    <br/>
+                    <label for="Age">Age</label>
+                    <select name="age" id="age">
+                        <option value="0">Select...</option>
+                        <option value="1">14 to 25</option>
+                        <option value="2">30 to 59</option>
+                        <option value="3">60 and above</option>
+                    </select>
+                    <br/>
+                    <label for="age">Gender</label>
+                    <select name="gender" id="gender">
+                        <option value="0">Select...</option>
+                        <option value="F">Female</option>
+                        <option value="M">Male</option>
+                    </select>
+                    <br/>
+                    <label for="comments">Comments:</label>
+                    <input type="text" name="comments" id="comments" required placeholder="comments" oninvalid="setCustomValidity('Please write comments about the website before  proceeding !!')" oninput="setCustomValidity('')">
+                    <br/>
+
+                    <input type="submit" value="Submit feedback"> 
+                  </fieldset>
+                  </form>
+                </div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<head>
+    <title>HAPPY MOMENTS BUYTICKET</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="JPG" href="banner.jpg">
+    <style>
+       body{  
+            font-family: sans-serif;
+            font-size: 18px;
+            color:white;
+            box-sizing: border-box;
+            background-color: grey;
+        }
+        /* set borders for the master page divs */
+        div.master:not(#divmaincontainer):not(#divcontainer){
+            border: 1px solid black;
+            margin-bottom: 2px;
+        }
+        /*set width for main container*/
+        #divmaincontainer{
+            width:100%;
+            margin:auto;
+            color: blacku767;
+        }
+        
+        
+        /* style site header and motto */
+        #divbanner>#sitetitle{
+            color: yellow;
+            font-size: 40px;
+            letter-spacing: 5px;
+            font-family: Arial;
+            display:block;
+            padding: 10px;
+        }
+        #divbanner>#sitemotto{
+           background-color:  black;
+            font-size:18px;
+            font-family: Arial;
+            font-style: italic;
+            display:block;
+            padding: 10px;
+        }
+        
+        /* style menu bar */
+        #divmenu{
+            height:30px;
+        }
+        #divmenu>#navmenu>#ulmenu{
+            margin: 5px;
+        }
+        #divmenu>#navmenu>#ulmenu>li{
+            list-style-type: none;
+            display: inline;
+        }
+        
+        /* style div main content */
+        #divmaincontent{
+            display:flex;
+            flex-direction: row;
+            gap:0.5%;
+            color: red;
+        }
+        
+        /* style div sidebar */
+        #divsidebar{
+            width: 29.5%;
+        }
+        
+        /* style div content */
+        #divcontent{
+            width: 70%;
+        }
+        
+        /* style footer */
+        #divfooter{
+            height:30px;
+        }
+        #divfooter>p{
+            margin: 5px;
+            text-align: center;
+        }
+        
+        /* style master class */
+        .master{
+            border-radius: 5px;
+        }
+    </style>
+    
+    
+</head>
+
+<body>
+  <div id="divcontent">
+    <form name="ticket" id="ticket" action="buyticket.html" method="post" target="_SELF" onsubmit="ValidateData()">
+    <div class="testbox">
+      <fieldset id="fieldsetcontrols">
+        <legend>HAPPY MOMENTS MOVIE THEATRE</legend>
+        <img src="banner.jpg" width="25%" alt="Gallery Image" title="Gallery Image">
+        <form action="/">
+            <h1>BUY YOUR TICKET HERE</h1>
+            <P>
+              <a  href="happymoments home page.html">HOME</a>
+              <a href="index.html">Index</a>
+              <a href="buy ticket.html">Buy ticket</a>
+          </P>
+            <p>If you you need any clarifications about the prices and times ,do not hesitate to get in touch with us.</p>
+            <p> SEE PRICE LIST BELOW AS PER PERSON:</p>
+            <P>COMEDY P50</P>
+            <P>ACTION P75</P>
+            <P>ROMANCE P150</P>
+            <P>ANIMATION P50</P>
+            <div>
+              <h4>I choose a  movie category of:</h4>
+              <div class="question-answer">
+                <label><input type="radio" value="none" name="using" />Comedy</label>
+                <label><input type="radio" value="none" name="using" />Action</label>
+                <label><input type="radio" value="none" name="using" />Romance</label>
+                <label><input type="radio" value="none" name="using" />Animation</label>
+
+              </div>
+              
+                      <label for="Time"> Movie Time</label>
+                      <select name="Time" id="age">
+                          <option value="0">Select...</option>
+                          <option value="1">08:00 am to 01:00 pm</option>
+                          <option value="2">02:00 pm to 07:00 pm</option>
+                          <option value="3">08:00 pm to 08:00 am</option>
+                      </select>
+                      <br/>
+                      <label for="Duration">Movie Duration</label>
+                      <select name="duration" id="duration">
+                          <option value="0">Select...</option>
+                          <option value="1">1 hour 30 minutes to 2 hours</option>
+                          <option value="2">2 hours to 2 hours 30 minutes</option>
+                      </select>
+                      <br/>
+                      <div>
+                        <h4>Payment method:</h4>
+                        <div class="question-answer">
+                          <label><input type="radio" value="none" name="using" />Visa</label>
+                          <label><input type="radio" value="none" name="using" />PayPal</label>
+                          <label><input type="radio" value="none" name="using" /> FNB Pay to cell(71283158)</label>
+                          
+                        </div>
+                        <label for="comments">proof of payment:</label>
+                    <input type="text" name="proof" id="proof" required placeholder="proof" oninvalid="setCustomValidity('Please provide proof of payment before  proceeding !!')" oninput="setCustomValidity('')">
+                    <br/>
+                      <input type="submit" value="buy ticket">
+                    </fieldset>
+                    </form>
+                  </div>
+  
+  
+  
+  </body>
+  </html>
